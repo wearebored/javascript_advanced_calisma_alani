@@ -1,6 +1,7 @@
 let score = 10;
 let number = Number((Math.random() * 100).toFixed());
 console.log(number);
+let top_score = 0;
 
 const inpt = document.querySelector("input");
 const button = document.querySelector(".check-btn");
@@ -11,7 +12,7 @@ window.onload = function () {
   inpt.focus();
 };
 button.onclick = function () {
-  if (inpt.value=="") {
+  if (inpt.value == "") {
     yazı.textContent = "Please enter a number";
   } else if (Number(inpt.value) > 100) {
     yazı.textContent = `${inpt.value} Sayısı 100'den Büyük.`;
@@ -30,6 +31,9 @@ button.onclick = function () {
     document.querySelector("body").style.background = "green";
     document.querySelector(".secret-number").textContent = number;
     inpt.disabled = true;
+    if (score > top_score) {
+      top_score = score;
+    }
   }
   document.querySelector(".score").textContent = score;
   if (!score) {
@@ -47,7 +51,7 @@ again.onclick = function () {
   score = 10;
   document.querySelector(".score").textContent = score;
   inpt.value = "";
-  document.querySelector(".top-score").textContent = 0;
+  document.querySelector(".top-score").textContent = top_score;
   yazı.textContent = "Starting..";
   inpt.disabled = false;
   button.disabled = false;
