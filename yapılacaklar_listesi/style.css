@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(158, 250, 250);
+}
+.container {
+  margin: 15vh 15vh 0 15vh;
+  height: 70vh;
+  background-color: rgb(233, 87, 87);
+  display: flex;
+  border-radius: 40px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.pler {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  margin: 5vh;
+  font-size: 4rem;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.322);
+  color: rgb(94, 219, 110);
+}
+.genel {
+  display: flex;
+  gap: 10px;
+}
+.giriş {
+  border-radius: 10px;
+  width: 300px;
+  border-color: aqua;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.button {
+  border-radius: 10px;
+  width: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  color: aqua;
+  background-color: blueviolet;
+  border-color: aqua;
+}
+li {
+  font-size: 20px;
+  color: aqua;
+}
