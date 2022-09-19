@@ -8,13 +8,12 @@ body {
 }
 .container {
   margin: 15vh 15vh 0 15vh;
-  height: 70vh;
+  min-height: 70vh;
   background-color: rgb(233, 87, 87);
   display: flex;
   border-radius: 40px;
-  flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
+  flex-direction: column;
 }
 .pler {
   display: flex;
@@ -49,4 +48,11 @@ h1 {
 li {
   font-size: 20px;
   color: aqua;
+  margin: 10px;
+}
+
+.liste {
+  width: 75%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
