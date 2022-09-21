@@ -1,14 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="baslık">
+      <h1>Checkout</h1>
+    </div>
+    <div class="bilgi">
+      <form action="bil">
+        <div class="iletisim">
+          <h2>Contact Information</h2>
+          <label for="mail">Email</label><br />
+          <i class="fa-solid fa-envelope"></i>
+          <input
+            type="email"
+            name="mail"
+            id="mail"
+            placeholder="Enter your email..."
+          />
+          <br />
+          <label for="phone">Phone</label>
+          <br />
+          <i class="fa-solid fa-phone"></i>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Enter your phone..."
+          />
+        </div>
+        <div class="adres">
+          <h2>Shipping address</h2>
+          <label for="isim">Full name</label>
+          <br />
+          <i class="fa-solid fa-user"></i>
+          <input
+            type="text"
+            name="isim"
+            id="isim"
+            placeholder="Enter your Full name..."
+          />
+          <br />
+          <label for="adres">Address</label>
+          <br />
+          <i class="fa-solid fa-house-chimney"></i>
+          <input
+            type="text"
+            name="adres"
+            id="adres"
+            placeholder="Enter your address..."
+          />
+          <br />
+          <label for="sehir">City</label>
+          <br />
+          <i class="fa-solid fa-city"></i>
+          <input
+            type="text"
+            name="sehir"
+            id="sehir"
+            placeholder="Enter your city..."
+          />
+          <div class="ülke">
+            <div>
+              <label for="ülkeler">Country</label>
+              <br />
+              <i class="fa-solid fa-earth-europe"></i>
+              <select name="ülkeler" id="ülkeler">
+                <option value="Türkiye">Türkiye</option>
+                <option value="ABD">ABD</option>
+                <option value="Fransa">Fransa</option>
+                <option value="Kanada">Kanada</option>
+              </select>
+            </div>
+            <div>
+                <label for="posta">Post Code</label>
+                <br>
+                <i class="fa-solid fa-envelopes-bulk"></i>
+                <input type="text" name="posta" id="posta">
+            </div>
+          </div>
+          <input type="checkbox" name="okey" id="okey">
+          <label for="okey">See this information next time</label>
+        </div>
+      </form>
+      <div class="tamam"><button>Continue</button></div>
+    </div>
+    <div class="satıs">
+        <div class="ürün1">
+            <div>
+                <img src="photo1.png" alt="canta">
+            </div>
+            <div class="fiyatlar">
+                <div>
+                    <p>Village Backbag</p>
+                    
+                    <p class="fiyat">$25.98 <span>$54.99</span></p>
+                </div>
+                <div class="ekle_cıkar">
+                    <div >
+                        <button>-</button>
+                        <p>1</p>
+                        <button>+</button>
+                    </div>
+                    <button>Remove</button>
+                    <p>Product Total: $ <span>25.98</span></p>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="ürün2">
+            <div>
+                <img src="photo2.png" alt="canta">
+            </div>
+            <div class="fiyatlar">
+                <div>
+                    <p>Village Backbag</p>
+                    
+                    <p class="fiyat">$25.98 <span>$54.99</span></p>
+                </div>
+                <div class="ekle_cıkar">
+                    <div >
+                        <button>-</button>
+                        <p>1</p>
+                        <button>+</button>
+                    </div>
+                    <button>Remove</button>
+                    <p>Product Total: $ <span>25.98</span></p>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="ürün3">
+            <div>
+                <img src="photo3.jpg" alt="canta">
+            </div>
+            <div class="fiyatlar">
+                <div>
+                    <p>Village Backbag</p>
+                    
+                    <p class="fiyat">$25.98 <span>$54.99</span></p>
+                </div>
+                <div class="ekle_cıkar">
+                    <div >
+                        <button>-</button>
+                        <p>1</p>
+                        <button>+</button>
+                    </div>
+                    <button>Remove</button>
+                    <p>Product Total: $ <span>25.98</span></p>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="total">
+            <P class="subtotal">Subtotal <span>$</span></P>
+            <P class="tax" >Tax(%18) <span>$</span></P>
+            <P class="shipping">Shipping <span>$</span></P>
+            <P class="totals">Total <span>$</span></P>
+        </div>
+       
+
+
+    </div>
+
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
