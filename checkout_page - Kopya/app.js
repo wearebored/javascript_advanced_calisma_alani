@@ -80,7 +80,7 @@ const totaller = function () {
     2
   )}`;
   document.querySelector(".tax span").textContent = `$${(
-    prod_total * 0.18
+    prod_total * localStorage.getItem("tax")/100
   ).toFixed(2)}`;
 
   document.querySelector(
