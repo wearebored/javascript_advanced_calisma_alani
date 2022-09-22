@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: rgb(255, 255, 255);
+}
+img {
+  width: 150px;
+  border-radius: 10px;
+}
+.baslık h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+.cont {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 2rem;
+}
+.bilgi {
+  width: 50%;
+  margin: 2rem;
+}
+.satıs {
+  width: 50%;
+  margin: 2rem;
+  background-color: rgb(226, 226, 226);
+  border-radius: 15px;
+  height: min-content;
+}
+label {
+  color: rgb(83, 83, 83);
+  font-size: 0.9rem;
+}
+i {
+  position: absolute;
+  margin: 22px 9px 9px 9px;
+  color: grey;
+}
+input {
+  padding: 12px 0 11px 32px;
+  border-radius: 7px;
+  border: solid 1px grey;
+  margin: 10px 0;
+  width: 100%;
+}
+.ülke {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+select {
+  padding: 12px 0 11px 32px;
+  border-radius: 7px;
+  margin: 10px 0;
+}
+h2 {
+  margin: 10px 0;
+  font-weight: 400;
+}
+.adres {
+  margin-top: 45px;
+}
+.posta {
+  width: 100%;
+}
+#okey {
+  width: auto;
+  margin: 10px 10px 0 0;
+}
+.tamam {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+.tamam button {
+  padding: 14px;
+  border-radius: 10px;
+  background-color: rgb(255, 164, 79);
+  color: white;
+  font-weight: 700;
+  border: solid 0px;
+}
+.ürünler {
+  margin: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.ekle_cıkar div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 1px grey;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+}
+.ekle_cıkar div button {
+  width: 20px;
+  height: auto;
+  font-size: 1.2rem;
+}
+.fiyatlar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.fiyatlar > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.fiyat {
+  display: flex;
+  gap: 5px;
+  color: rgb(216, 140, 0);
+  font-weight: 700;
+}
+
+.fiyat span {
+  display: flex;
+  gap: 5px;
+  color: rgb(56, 56, 55);
+  font-size: 0.7rem;
+  align-items: center;
+
+  text-decoration: line-through;
+}
+.remove {
+  width: 3.7rem;
+  height: auto;
+  font-size: 0.7rem;
+  padding: 6px 0;
+  border-radius: 5px;
+  border: solid 0px;
+  background-color: rgb(194, 61, 61);
+  color: white;
+  font-weight: 300;
+}
+.prod {
+  margin-top: 10px;
+}
+
+.total {
+  margin: 0 25px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.total p {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid grey;
+}
+.bas {
+  font-weight: 700;
+}

@@ -7,11 +7,8 @@ let ürünler = {
   ürün4: 33,
   ürün5: 11,
 };
-window.onload = function (e) {
-  
-  localStorage.setItem("ürünler", ürünler);
-  localStorage.setItem("shi", shi);
 
+window.onload = function (e) {
   let eleman_say =
     e.target.doctype.nextSibling.children[1].children[1].children[1].children;
 
@@ -44,7 +41,7 @@ window.onload = function (e) {
           }
         }
       }
-      
+
       const sub = document.querySelector(`.${i.className} .subtotal span`);
       const tax = document.querySelector(`.${i.className} .tax span`);
       const ship = document.querySelector(`.${i.className} .shipping span`);
