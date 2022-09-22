@@ -44,6 +44,7 @@ window.onload = function (e) {
           }
         }
       }
+      
       const sub = document.querySelector(`.${i.className} .subtotal span`);
       const tax = document.querySelector(`.${i.className} .tax span`);
       const ship = document.querySelector(`.${i.className} .shipping span`);
