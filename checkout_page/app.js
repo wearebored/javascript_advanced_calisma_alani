@@ -7,8 +7,11 @@ let ürünler = {
   ürün4: 33,
   ürün5: 11,
 };
-let nakliye = 15;
 window.onload = function (e) {
+  
+  localStorage.setItem("ürünler", ürünler);
+  localStorage.setItem("shi", shi);
+
   let eleman_say =
     e.target.doctype.nextSibling.children[1].children[1].children[1].children;
 
@@ -53,7 +56,6 @@ window.onload = function (e) {
         Number(prod * 0.18) +
         Number(shi)
       ).toFixed(2)}`;
-      
     }
   }
 };
@@ -82,7 +84,6 @@ satıs.onclick = function (e) {
   } else if (tik == "+") {
     konumlar.innerText++;
   } else if (tik == "Remove") {
-    
     let bosluk = e.path[3].className.indexOf(" ");
     let conf = confirm("Ürünü listeden kaldırmak istiyormusunuz?");
     if (conf) {
