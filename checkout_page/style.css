@@ -86,9 +86,7 @@ h2 {
   font-weight: 700;
   border: solid 0px;
 }
-.ürün1,
-.ürün2,
-.ürün3 {
+.ürünler {
   margin: 1.5rem;
   display: flex;
   align-items: center;
@@ -125,12 +123,14 @@ h2 {
   color: rgb(216, 140, 0);
   font-weight: 700;
 }
+
 .fiyat span {
   display: flex;
   gap: 5px;
   color: rgb(56, 56, 55);
   font-size: 0.7rem;
-  align-items: flex-end;
+  align-items: center;
+
   text-decoration: line-through;
 }
 .remove {
