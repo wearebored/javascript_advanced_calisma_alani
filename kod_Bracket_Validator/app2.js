@@ -43,8 +43,10 @@ const kontrolcü = (e) => {
   }
   if (ifade == "") {
     console.log(`${ifade_girdi} doğru yazılmıştır.`);
+    return true
   } else {
     console.log(`${ifade_girdi} hatalı yazılmıştır.`);
+    return false
   }
 };
 
@@ -61,4 +63,3 @@ function ayırıcı(a) {
   return veri;
 }
 
-kontrolcü("([]{[asdsa]})[asd]asd{asd{asasd}()}");
