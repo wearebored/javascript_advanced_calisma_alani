@@ -61,4 +61,4 @@ function ayırıcı(a) {
   return veri;
 }
 
-kontrolcü("([]{[]})[]{{}()}");
+kontrolcü("([]{[asdsa]})[asd]asd{asd{asasd}()}");
