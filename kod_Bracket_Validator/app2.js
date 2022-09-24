@@ -62,4 +62,4 @@ function ayırıcı(a) {
   }
   return veri;
 }
-
+kontrolcü("(sadf[]asd{[]we})[asd]{{}(asd)}");
