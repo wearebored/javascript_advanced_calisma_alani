@@ -1,3 +1,4 @@
+
 const kontrolcü = (e) => {
   const ifade_girdi = ayırıcı(e);
   let ifade = ifade_girdi;
@@ -9,8 +10,7 @@ const kontrolcü = (e) => {
     if (a >= 0) {
       for (let i = -1; a > i; i) {
         console.log(ifade);
-        ifader_topla += ifade.slice(0, a);
-        ifader_topla += ifade.slice(a + 2);
+        ifader_topla = ifade.slice(0, a) + ifade.slice(a + 2);
         ifade = ifader_topla;
         ifader_topla = "";
         a = ifade.indexOf("[]");
@@ -20,8 +20,8 @@ const kontrolcü = (e) => {
     } else if (b >= 0) {
       for (let i = -1; b > i; i) {
         console.log(ifade);
-        ifader_topla += ifade.slice(0, b);
-        ifader_topla += ifade.slice(b + 2);
+        
+        ifader_topla = ifade.slice(0, b)+ ifade.slice(b + 2);
         ifade = ifader_topla;
         ifader_topla = "";
         a = ifade.indexOf("[]");
@@ -31,8 +31,8 @@ const kontrolcü = (e) => {
     } else if (c >= 0) {
       for (let i = -1; c > i; i) {
         console.log(ifade);
-        ifader_topla += ifade.slice(0, c);
-        ifader_topla += ifade.slice(c + 2);
+        
+        ifader_topla = ifade.slice(0, c)+ ifade.slice(c + 2);
         ifade = ifader_topla;
         ifader_topla = "";
         a = ifade.indexOf("[]");
@@ -43,10 +43,10 @@ const kontrolcü = (e) => {
   }
   if (ifade == "") {
     console.log(`${ifade_girdi} doğru yazılmıştır.`);
-    return true
+    return true;
   } else {
     console.log(`${ifade_girdi} hatalı yazılmıştır.`);
-    return false
+    return false;
   }
 };
 
@@ -62,4 +62,4 @@ function ayırıcı(a) {
   }
   return veri;
 }
-kontrolcü("(sadf[]asd{[]we})[asd]{{}(asd)}");
+kontrolcü("({()fgkldjfg})(){dfg(){}dfg}");
