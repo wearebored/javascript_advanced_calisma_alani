@@ -1,12 +1,12 @@
 
 
-// let b = fetch(
-//   "https://api.openweathermap.org/data/2.5/forecast?lat=39.618046&lon=28.108203&appid=392b2f60556f3f3ff66b102138100d46"
-// )
-//   .then((a) => a)
-//   .then((a) => {
-//     console.log(a);
-//   });
+let b = fetch(
+  "https://api.openweathermap.org/data/2.5/forecast?lat=39.618046&lon=28.108203&appid=392b2f60556f3f3ff66b102138100d46"
+)
+  .then((a) => a)
+  .then((a) => {
+    console.log(a);
+  });
  
 
 
