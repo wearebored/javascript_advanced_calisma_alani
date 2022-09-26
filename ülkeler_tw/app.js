@@ -1,5 +1,6 @@
 
-window.onload = () => {
+
+
   fetch("https://restcountries.com/v3.1/all")
     .then((res) => res.json())
     .then((res) => {
@@ -8,10 +9,14 @@ window.onload = () => {
           "#select"
         ).innerHTML += `<option class="select" selected>${res[i].name.common}</option>`;
       }
+      val.disabled=false
     });
-};
+
+
+
 let val = document.querySelector("#select");
 let sayac = 0;
+val.disabled=true
 val.onclick = () => {
   sayac += 1;
   console.log(sayac);
@@ -75,23 +80,3 @@ val.onclick = () => {
   }
 };
 
-// let val = document.querySelector("#select");
-// let sayac=0
-
-//  val.onclick = () => {
-//    sayac += 1;
-//    console.log(sayac);
-//    if (sayac == "2") {
-//      let sehir = val.value;
-//      sayac = 0;
-//      fetchCountryByName(`${sehir}`);
-//      console.log(sayac);
-
-//    }
-//    else{
-//     console.log("sayı");
-//    }
-//    console.log("asd");
-// }
-
-// fetchCountryByName(`${al}`);
