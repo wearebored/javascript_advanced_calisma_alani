@@ -14,7 +14,7 @@ body {
 }
 h1 {
   text-align: center;
-  color: antiquewhite;
+  color: rgb(255, 255, 255);
   margin: 2rem;
   font-size: 3rem;
 }
@@ -25,7 +25,7 @@ h1 {
 }
 .arama input {
   padding: 1.4rem;
-  margin: 0 4rem;
+  margin: 0 12rem;
   font-size: 1.2rem;
   border-radius: 40px;
   background-color: rgba(0, 0, 0, 0.712);
@@ -41,10 +41,21 @@ h1 {
 .buton {
   width: 50%;
   display: flex;
+      align-items: flex-end;
   flex-direction: column;
   justify-content: center;
 }
+/* .buton button {
+  padding: 1.4rem 0;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  margin: 2rem 1rem 0 5rem;
+  background-color: rgba(255, 255, 255, 0.644);
+
+  border: solid 3px rgb(0, 0, 0);
+} */
 .buton button {
+      width: 70%;
   padding: 1.4rem 0;
   border-radius: 30px;
   font-size: 1.2rem;
@@ -60,7 +71,17 @@ h1 {
   flex-direction: column;
   justify-content: center;
 }
+/* .konum button {
+  padding: 1.4rem 0;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  margin: 2rem 5rem 0 1rem;
+  background-color: rgba(255, 255, 255, 0.644);
+
+  border: solid 3px rgb(0, 0, 0);
+} */
 .konum button {
+     width: 70%;
   padding: 1.4rem 0;
   border-radius: 30px;
   font-size: 1.2rem;
@@ -153,4 +174,22 @@ h1 {
 
   background-size: cover;
 }
+  .arama input {
+ 
+  margin: 0 1rem;
+  
+  }
+  .konum button {
+    width: 10rem;
+  
+  margin: 2rem 5rem 0 0.5rem;
+ 
+}
+ .buton button {
+  width: 10rem;
+  
+  margin: 2rem 0.5rem 0 5rem;
+  
+} 
+
 }
