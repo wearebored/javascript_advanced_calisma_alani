@@ -23,7 +23,7 @@ let k = 3;
 // alınan elemanları koymak için boş liste oluşturulacak
 let sonuc = [];
 // eleman sayısı -2 defa işlem tekrarlanacak.
-let tekrar_sayısı = given_array.length - k+1;
+let tekrar_sayısı = given_array.length - k + 1;
 
 console.log(tekrar_sayısı);
 for (let i = 0; i < tekrar_sayısı; i++) {
