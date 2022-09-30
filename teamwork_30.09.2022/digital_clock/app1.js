@@ -14,12 +14,16 @@ let saniye = new Date().getSeconds();
 // document.querySelector(".saat").innerHTML = saat;
 // document.querySelector(".dakika").innerHTML = dakika;
 // document.querySelector(".saniye").innerHTML = saniye;
-if(saat<10){
-    document.querySelector(".saat").innerHTML ="0"+ saat;
-}
-else{
-    document.querySelector(".saat").innerHTML = saat;
-}
+// if(saat<10){
+//     document.querySelector(".saat").innerHTML ="0"+ saat;
+// }
+// else{
+//     document.querySelector(".saat").innerHTML = saat;
+// }
+saat < 10
+  ? (document.querySelector(".saat").innerHTML = "0" + saat)
+  : (document.querySelector(".saat").innerHTML = saat);
+  
 if (dakika < 10) {
   document.querySelector(".dakika").innerHTML = "0" + dakika;
 } else {
