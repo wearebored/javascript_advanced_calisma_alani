@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(0, 217, 255);
+}
+body {
+  background-color: black;
+}
+div {
+  display: flex;
+  justify-content: center;
+  margin: 40vh 0;
+  gap: 0.8rem;
+}
+p {
+  font-size: 4rem;
+}
